@@ -9,10 +9,13 @@ public class CommandInvoker : MonoBehaviour
     static List<ICommand> commandHistory;
     static int counter;
 
+    private bool dirty_;
+
     private void Awake() 
     {
         commandBuffer = new Queue<ICommand>();
         commandHistory = new List<ICommand>();
+        dirty_ = false;
     }
 
     public static void AddCommand(ICommand command)
@@ -54,6 +57,25 @@ public class CommandInvoker : MonoBehaviour
                     counter++;
                 }
             }
+        }
+
+        //dirty_ check
+        if (dirty_ == true)
+        {
+            for (int i = 0; i < counter; i++)
+            {
+                
+                 commandHistory[i].Undo();
+                
+                
+            }
+            Debug.Log("Blocks cleared");
+            dirty_ = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            dirty_ = true;
         }
     }
 }

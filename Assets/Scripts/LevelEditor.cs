@@ -16,6 +16,9 @@ public class LevelEditor : MonoBehaviour
 
     public static event Action placeBlock;
 
+    //private bool dirty_ = false;
+
+
 
     private void Update()
     {
@@ -33,7 +36,21 @@ public class LevelEditor : MonoBehaviour
             Destroy(GameObject.FindGameObjectWithTag("ItemImage"));
             counter++;
         }
+        //dirty_ check
+        //if (dirty_ == true)
+        //{
+        //    for (int i = currentBlock[].Length; i > 0; i--)
+        //    {
+        //        currentBlock[i] = null;
+        //    }
 
+        //    dirty_ = false;
+        //}
+
+        //if (Input.GetKeyDown(KeyCode.C))
+        //{
+        //    dirty_ = true;
+        //}
 
 
         RemoveBlock();
@@ -91,4 +108,7 @@ public class LevelEditor : MonoBehaviour
             counter++;
         }
     }
+
+
+
 }
