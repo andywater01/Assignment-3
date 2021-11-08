@@ -2,6 +2,7 @@ Description: 2D platformer with level editor. Using items such as ground blocks,
 
 Youtube link: https://youtu.be/JiyNQpH8M7A 
 
+WebGL build: https://andywater01.github.io/Assignment3Build/
 
 Before:
 
@@ -9,7 +10,7 @@ Before:
 
 After:
 
-![A3_SS1](https://user-images.githubusercontent.com/56273599/139746524-16bb9574-ec07-4056-84cd-0570dae2df79.PNG)
+![A3_SS3](https://user-images.githubusercontent.com/56273599/139750333-f8f73043-75a0-41c8-9f12-be99074724b2.PNG)
 
 ![A3_SS2](https://user-images.githubusercontent.com/56273599/139746531-b9fd9861-495e-47f2-a8c0-0eaccc3eed41.PNG)
 
